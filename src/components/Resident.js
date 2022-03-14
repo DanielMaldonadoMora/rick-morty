@@ -9,9 +9,9 @@ const Resident = ({resident}) => {
         .then((res)=>setResidentInfo(res.data))
        }, [resident])
     const status= ()=>{
-       if( residentInfo.status=='unknown'){
+       if( residentInfo.status==='unknown'){
            return 'unknown'
-       } else if(residentInfo.status=='Alive'){
+       } else if(residentInfo.status==='Alive'){
            return 'alive'
        }else {
            return "dead"
