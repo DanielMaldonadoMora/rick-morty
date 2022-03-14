@@ -56,12 +56,16 @@ html {
 }
 
 /*                                 Character Card         */
+.residentsList{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .card {
   display: flex;
   background-color:rgb(85, 85, 85) ;
   border-radius: 2rem;
-  width: 40%;
+  width: 80%;
   align-items: center;
   justify-content: space-between;
   margin: auto;

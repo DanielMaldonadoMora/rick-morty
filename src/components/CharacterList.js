@@ -6,7 +6,7 @@ const CharacterList = ({location}) => {
     
     
     return (
-        <div>
+        <div className='residentsList'>
            {
                 location?.residents?.map(resident=>(
                     <Resident  resident={resident}

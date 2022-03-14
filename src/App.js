@@ -4,6 +4,7 @@ import './App.css';
 import CharacterList from './components/CharacterList';
 import SearchBox from './components/SearchBox';
 import logo from './assets/RyM3.png';
+import LocationInfo from './components/LocationInfo';
 
 function App() {
   const [location, setlocation] = useState({})
@@ -22,7 +23,7 @@ function App() {
         <img src={logo} alt="Logo" className='logo' />
       </div>
       <SearchBox setlocation={setlocation} />
-      <h1>{location.name}</h1>
+      <LocationInfo location={location}/>
      <CharacterList location={location}/>
     </div>
   );
