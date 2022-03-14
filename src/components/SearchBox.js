@@ -11,9 +11,9 @@ const SearchBox = ({setlocation}) => {
 
     const [search, setSearch] = useState('')
     return (
-        <div>
-            <input type="text"  onChange={e => setSearch(e.target.value)}  value={search}/>
-            <button onClick={searchLocation}>Search</button>
+        <div className='search_box'>
+            <input type="text" className='input_search' onChange={e => setSearch(e.target.value)}  value={search}/>
+            <button className='search_buton' onClick={searchLocation}>Search</button>
         </div>
     );
 };

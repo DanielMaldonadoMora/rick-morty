@@ -1,38 +1,99 @@
-.App {
+html {
+  margin: 0;
+  border:0;
+  background-color: rgb(36, 36, 36);
+  color: aliceblue;
   text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*                    SearchBox   */
+.search_box {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input_search{
+  width: 70%;
+  height: 3rem;
+  background-color: rgb(85, 85, 85);
+  font-size: 1.5rem;
+  color: aliceblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search_buton{
+  width: 10%;
+  height: 3.5rem;
+  color: aliceblue;
+  background-color: rgb(36, 36, 36);
+  border-color: white ;
+  border-style: solid double;
+}
+/*                                 Header/Logo        */
+.container{
+  display: flex;
+  margin:auto;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.logo{
+  width: 30rem;
+}
+
+/*                                LocationInfo            */
+.location_info{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.location_info ul{
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+/*                                 Character Card         */
+
+.card {
+  display: flex;
+  background-color:rgb(85, 85, 85) ;
+  border-radius: 2rem;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+.photo {
+  border-radius: 2rem 0 0 2rem;
+  width: 15rem;
+  
+}
+.info {
+  list-style: none;
+  margin-right: 4rem;
+}
+.status{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  
+}
+.alive{
+  background-color: rgb(77, 243, 72);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dead{
+  background-color: rgb(250, 44, 44);
+  
+}
+
+.unknown{
+  background-color: rgb(173, 171, 171);
+
 }

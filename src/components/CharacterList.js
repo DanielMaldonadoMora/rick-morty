@@ -1,5 +1,5 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+
+import React from 'react';
 import Resident from './Resident';
 
 const CharacterList = ({location}) => {
@@ -9,7 +9,7 @@ const CharacterList = ({location}) => {
         <div>
            {
                 location?.residents?.map(resident=>(
-                    <Resident resident={resident}
+                    <Resident  resident={resident}
                               key={resident} 
                     />
                 ))
